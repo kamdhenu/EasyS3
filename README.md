@@ -5,7 +5,7 @@ A simple bash script to take automated offsite backup of sites created with Easy
 ## How to Use this script
 
 1. Install and configure s3cmd on your server
-````
+```
 apt-get install s3cmd
 s3cmd --configure
 ```
@@ -18,6 +18,7 @@ vi /home/youruser/backups/backup.sh
 * Save and close this file: press ESC, now write wq, press ENTER
 
 OR
+
 Simply copy this script from GitHub
 ```
 mkdir -p /home/youruser/backups/ && wget -O /home/youruser/backups/backup.sh http://www.github.com/url
@@ -33,4 +34,8 @@ chmod +x /home/youruser/backups/backup.sh
 6. Run this script to start backup immidiately
 
 FINALLY
-7. Set cron job to automate the backup: /home/youruser/backups/backup.sh >/dev/null 2>&1
+
+7. Set cron job to automate the backup:
+```
+/home/youruser/backups/backup.sh >/dev/null 2>&1
+```
