@@ -4,7 +4,7 @@ A simple bash script to take automated offsite backup of sites created with Easy
 
 ## How to Use this script
 
-1. Install and configure s3cmd on your server
+1. First of all install and configure [s3cmd](https://github.com/s3tools/s3cmd) on your server
 ```
 apt-get install s3cmd
 s3cmd --configure
