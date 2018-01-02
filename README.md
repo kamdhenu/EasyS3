@@ -12,7 +12,7 @@ s3cmd --configure
 
 2 Create backup.sh in your syncked directory:
 ```
-vi /home/youruser/backups/backup.sh
+vi ~/backups/backup.sh
 ```
 * Paste this script in to this opend file: press i and then click with right mouse button
 * Save and close this file: press ESC, now write wq, press ENTER
@@ -21,7 +21,7 @@ OR
 
 Simply copy this script from GitHub
 ```
-mkdir -p /home/youruser/backups/ && wget -O /home/youruser/backups/backup.sh https://raw.githubusercontent.com/kamdhenu/EasyS3/master/backup.sh
+mkdir -p ~/backups/ && wget -O ~/backups/backup.sh https://raw.githubusercontent.com/kamdhenu/EasyS3/master/backup.sh
 ```
 
 3. Edit the downloaded `backup.sh` file and enter your S3 Bucket name
@@ -29,7 +29,7 @@ mkdir -p /home/youruser/backups/ && wget -O /home/youruser/backups/backup.sh htt
 
 4. Make this script executable:
 ```
-chmod +x /home/youruser/backups/backup.sh
+chmod +x ~/backups/backup.sh
 ```
 
 5. If you want to exclude certain files/directories, create a file called "exclude.txt" inside the backups directory
@@ -40,5 +40,5 @@ FINALLY
 
 8. Set cron job to automate the backup:
 ```
-/home/youruser/backups/backup.sh >/dev/null 2>&1
+/root/backups/backup.sh >/dev/null 2>&1
 ```
