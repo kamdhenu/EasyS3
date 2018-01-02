@@ -10,14 +10,14 @@ apt-get install s3cmd
 s3cmd --configure
 ```
 
-2 Create backup.sh in your syncked directory:
+2 Create backup.sh in your /root/backups directory:
 ```
 vi ~/backups/backup.sh
 ```
 * Paste this script in to this opend file: press i and then click with right mouse button
 * Save and close this file: press ESC, now write wq, press ENTER
 
-OR
+***OR***
 
 Simply copy this script from GitHub
 ```
@@ -36,9 +36,13 @@ chmod +x ~/backups/backup.sh
 6. Add pattern/path for all excluded files/directories in this file (one per line) and save it
 7. Run this script to start backup immidiately
 
-FINALLY
+***FINALLY***
 
 8. Set cron job to automate the backup:
 ```
 /root/backups/backup.sh >/dev/null 2>&1
 ```
+
+***IMPORTANT***
+
+You may also want to setup an [Object Expiration Policy](https://aws.amazon.com/blogs/aws/amazon-s3-object-expiration/) for your s3 bucke to auto delete/archive old backup files from your bucket.
