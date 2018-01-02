@@ -10,7 +10,7 @@
 #		$ s3cmd --configure
 # 2. Create an unique directory on your server to store backup files: mkdir ~/backups/
 # 3. Create backup.sh and paste this script in to it: vi ~/backups/backup.sh
-#    OR Download it from GitHub: wget -O ~/backups/backup.sh http://www.github.com/url 
+#    OR Download it from GitHub: wget -O ~/backups/backup.sh https://raw.githubusercontent.com/kamdhenu/EasyS3/master/backup.sh 
 # 4. Make script executable: chmod +x ~/backups/backup.sh
 # 5. If you want to exclude certain files/directories, create a file called "exclude.txt"
 # 6. Add pattern/path for all excluded files/directories in this file (one per line) and save it
