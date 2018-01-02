@@ -1,6 +1,6 @@
 # EasyS3
 
-A simple bash script to take automated offsite backup of sites created with EasyEngine
+A simple bash script to take automated offsite backup of sites created with [EasyEngine](https://github.com/EasyEngine/easyengine)
 
 ## How to Use this script
 
