@@ -21,21 +21,24 @@ OR
 
 Simply copy this script from GitHub
 ```
-mkdir -p /home/youruser/backups/ && wget -O /home/youruser/backups/backup.sh http://www.github.com/url
+mkdir -p /home/youruser/backups/ && wget -O /home/youruser/backups/backup.sh https://raw.githubusercontent.com/kamdhenu/EasyS3/master/backup.sh
 ```
 
-3. Make this script executable:
+3. Edit the downloaded `backup.sh` file and enter your S3 Bucket name
+
+
+4. Make this script executable:
 ```
 chmod +x /home/youruser/backups/backup.sh
 ```
 
-4. If you want to exclude certain files/directories, create a file called "exclude.txt" inside the backups directory
-5. Add pattern/path for all excluded files/directories in this file (one per line) and save it
-6. Run this script to start backup immidiately
+5. If you want to exclude certain files/directories, create a file called "exclude.txt" inside the backups directory
+6. Add pattern/path for all excluded files/directories in this file (one per line) and save it
+7. Run this script to start backup immidiately
 
 FINALLY
 
-7. Set cron job to automate the backup:
+8. Set cron job to automate the backup:
 ```
 /home/youruser/backups/backup.sh >/dev/null 2>&1
 ```
