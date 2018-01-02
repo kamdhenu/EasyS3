@@ -1,2 +1,2 @@
 ee-config.php
-/logs
+./logs
