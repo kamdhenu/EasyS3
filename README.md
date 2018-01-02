@@ -10,7 +10,7 @@ apt-get install s3cmd
 s3cmd --configure
 ```
 
-2 Create backup.sh in your /root/backups directory:
+2. Create backup.sh in your /root/backups directory:
 ```
 vi ~/backups/backup.sh
 ```
